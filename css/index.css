@@ -35,6 +35,19 @@ ul {
 .underline-text{
     background:linear-gradient(transparent 70%, #7ed957 0%);
 }
+.sentence{
+    display: flex;
+    background-color: white;
+    width: 100vw;
+    height: 400px;
+    transform: translateY(550px);
+}
+.sentence div{
+    font-size: 130%;
+    margin-top: 2%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
 /*-----------------------------------------------------------*/
 
 /*------------------font------------------*/
@@ -49,6 +62,9 @@ ul {
 }
 .font-title-jap{
     font-family: 'Merriweather', serif;
+}
+.font-sentence{
+    font-family: "Arial"
 }
 /*-----------------------------------------*/
 
@@ -209,11 +225,6 @@ nav.sticky ul {
 	opacity: 0;
 }
 
-.profile{
-    display: flex;
-    background-color: #004aad;
-    width: 100vw;
-}
 
 @media screen and (max-width: 1500px){
     .right-bg main{ margin-left: 15%; }
