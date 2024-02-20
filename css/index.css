@@ -71,10 +71,9 @@ ul {
 /*----------------------------Setting for Slider------------------------------*/
 .slider{
     position: absolute;
-    top: 66px;
     left: 0;
     overflow: hidden;
-    width: 100%;
+    width: 100vw;
     height: 500px;
     background-color: #000;
   }
@@ -134,7 +133,26 @@ ul {
   }
 /*---------------------------------Setting for Slider--------------------------------------*/
 
+.infomation{
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    transform: translateY(550px);
+}
+.infomation h2{
+    margin-bottom: 2%;
+}
+
 /*----------------------------------------HEADER-------------------------------------------*/
+.web-head{
+    background-color: black;
+    width: 100vw;
+    height: 50px;
+}
+.web-head p{
+    color: white;
+}
+
 header{
     z-index: 1000;
 }
