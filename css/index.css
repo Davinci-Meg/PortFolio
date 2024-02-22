@@ -231,6 +231,18 @@ nav ul li p{
 /*refalence URL: https://www.youtube.com/watch?v=jknVXr_uMoQ*/
 /*---------------------------------------------------------------------------------------*/
 
+.switchLang{
+    transform: translateY(550px);
+    background-color: white;
+    width: 100vw;
+    height: 5px;
+}
+.switchLang p{
+    margin-right: 3%;
+    text-align: right;
+    color: black;
+}
+
 /*--------------------------------------foot-info-----------------------------------------*/
 .footer{
     transform: translateY(550px);
