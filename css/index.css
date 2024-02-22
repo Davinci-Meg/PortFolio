@@ -192,12 +192,6 @@ ul {
 /*---------------------------------Main contents----------------------------------*/
 
 /*----------------------------------------HEADER-------------------------------------------*/
-.web-head{
-    background-color: black;
-    width: 100vw;
-    height: 25px;
-}
-
 header{
     z-index: 1000;
 }
@@ -255,33 +249,6 @@ nav ul li p{
     color: black;
 }
 /*-------------------------------------------------------------------------------------*/
-
-/*-------------------------------------ARTICLE-----------------------------------------*/
-.icon{
-    position: relative;
-	width: 320px;
-	height: 320px;
-	margin: 0 auto;
-	display: block;
-	border-radius: 50%;
-	overflow: hidden;
-	cursor: pointer;
-}
-.icon img {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	width: 100%;
-	display: block;
-	-webkit-transition: .4s ease-in-out;
-	transition: .4s ease-in-out;
-}
-.icon:hover img:nth-of-type(2) {
-	opacity: 0;
-}
-
 
 @media screen and (max-width: 1500px){
     .right-bg main{ margin-left: 15%; }
