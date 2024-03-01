@@ -1,0 +1,432 @@
+/* ------------Apply to the whole-----------*/
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* -----------------------------------------*/
+
+/*-------------------------Normal Setting--------------------*/
+body {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+}
+ul {
+    list-style: none;
+}
+.main{
+    transform: translateY(550px);
+}
+.title{
+    position: relative;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.title h1{
+    font-size: 100px;
+}
+.title p{
+    font-size: 20px;
+}
+.underline {
+    background: linear-gradient(transparent 70%, #0013b9 0%);
+}
+.underline-text{
+    background:linear-gradient(transparent 70%, #7ed957 0%);
+}
+.sentence{
+    display: flex;
+    background-color: white;
+    width: 100vw;
+    height: 400px;
+    transform: translateY(550px);
+}
+.sentence div{
+    font-size: 130%;
+    margin-top: 2%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+/*-----------------------------------------------------------*/
+
+/*------------------font------------------*/
+.font-title{
+    font-family: 'Merriweather', serif;
+}
+.font-sentence{
+    font-family: "Arial";
+}
+.font-roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/*-----------------------------------------*/
+
+/*----------------------------Setting for Slider------------------------------*/
+.slider{
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 500px;
+    background-color: #000;
+  }
+  
+  /*------image-------*/
+  .slider .image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  
+  /*
+    Nr.1 the images of Slider
+    Define to slider
+  */
+  .slider .image:nth-of-type(1){
+    background-image: url(../images/slider1.jpg);
+  }
+  .slider .image:nth-of-type(2){
+    animation-delay: 5s;
+    background-image: url(../images/slider2.jpg); /*Ref-URLPhoto by Pavel Danilyuk: https://www.pexels.com/photo/close-up-shot-of-white-toy-robot-8294657/*/
+  }
+  .slider .image:nth-of-type(3){
+    animation-delay: 10s;
+    background-image: url(../images/slider3.jpg);
+  }
+  
+  /*
+    Nr.2 Animation-Setting
+    Change ONLY animation-duration
+  */
+  .slider .image{
+    animation-name: anime;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;  /*Insert the sum of animation-delay set in Nr.1*/
+  }
+  
+  /* Define to Animation */
+  @keyframes anime {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1.18);
+    }
+  }
+/*---------------------------------Setting for Slider--------------------------------------*/
+
+/*---------------------------------Main contents----------------------------------*/
+.infomation{
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 17.5%;
+    margin-bottom: 5%;
+    transform: translateY(550px);
+}
+.infomation h1{
+    margin-bottom: 2%;
+}
+.infomation ul li{
+    margin-bottom: 0.5%;
+}
+
+.section{
+    display: block !important;
+    font-size: 1.2rem;
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+}
+
+.products{
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 17.5%;
+    margin-bottom: 5%;
+    transform: translateY(550px);
+    flex-wrap: wrap;
+}
+.products h3{
+    margin-bottom: 20px;
+}
+.products ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .products li {
+    flex: 0 0 calc(33.33% - 10px); /* 10px is the total margin space between the images */
+    margin-bottom: 20px;
+  }
+  
+  .products img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd; /* Optional: Add a border to the images */
+    border-radius: 5px; /* Optional: Add rounded corners to the images */
+  }
+  
+  /* Media query for responsiveness */
+  @media screen and (max-width: 768px) {
+    .products li {
+      flex: 0 0 calc(50% - 10px);
+    }
+  }
+/*---------------------------------Main contents----------------------------------*/
+
+/*----------------------------------------HEADER-------------------------------------------*/
+header{
+    z-index: 1000;
+}
+.fade { max-width: 600px; margin: 0 auto 50px; padding: 0; height: auto;}
+.fade img{ width: 100%;}
+
+nav{
+    z-index: 1000;
+    width: 100vw;
+    height: 50px;
+    text-align: right;
+}
+nav ul{
+    background-color: #000;
+    list-style: none;
+    width: 100%;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px 30px;
+}
+nav ul li p{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar{
+    font-size: 1.1rem;
+}
+/*refalence URL: https://www.youtube.com/watch?v=jknVXr_uMoQ*/
+/*---------------------------------------------------------------------------------------*/
+
+.switchLang{
+    transform: translateY(550px);
+    background-color: white;
+    width: 100vw;
+    height: 5px;
+}
+.switchLang p{
+    margin-right: 3%;
+    text-align: right;
+    color: black;
+}
+
+/*--------------------------------------foot-info-----------------------------------------*/
+.footer{
+    transform: translateY(550px);
+    background-color: white;
+    width: 100vw;
+    height: 50px;
+}
+.footer p{
+    text-align: center;
+    color: black;
+}
+/*-------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1500px){
+    .right-bg main{ margin-left: 15%; }
+    .right-bg aside{ margin-right: 15%; }
+    .left-bg main{ margin-left: 15%; }
+    .left-bg aside{ margin-right: 15%; }
+}
+@media screen and (max-width: 1300px){
+    .right-bg main{ margin-left: 11%; }
+    .right-bg aside{ margin-right: 11%; }
+    .left-bg main{ margin-left: 11%; }
+    .left-bg aside{ margin-right: 11%; }
+}
+@media screen and (max-width: 1100px){
+    .right-bg main{ margin-left: 7%; }
+    .right-bg aside{ margin-right: 7%; }
+    .left-bg main{ margin-left: 7%; }
+    .left-bg aside{ margin-right: 7%; }
+}
+@media screen and (max-width: 1000px){
+    .adver{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+@media screen and (max-width: 900px){
+    .right-bg main{ margin-right: 5%; }
+    .left-bg main{ margin-right: 5%; }
+    .icon{
+        width: 280px;
+        height: 280px;
+    }
+    .title h1{font-size: 70px;}
+
+}
+@media screen and (max-width: 800px){
+    .right-bg aside{ margin-right: 7%; }
+    .left-bg aside{ margin-right: 7%; }
+    .right-bg main{ 
+        margin-right: 4%;
+        margin-left: 7%;
+    }
+    .left-bg main{
+        margin-right: 4%;
+        margin-left: 7%;
+    }
+    .icon{
+        width: 200px;
+        height: 200px;
+    }
+    .title h1{font-size: 50px;}
+    
+}
+@media screen and (max-width: 700px){
+    .icon{
+        width: 180px;
+        height: 180px;
+    }
+    .right-bg main p{
+        font-size: 15px;
+    }
+    .left-bg aside p{
+        font-size: 15px;
+    }
+    .title h1{font-size: 40px;}
+    .title p{font-size: 15px;}
+
+}
+@media screen and (max-width: 600px){
+    .right-bg main{ 
+        margin-right: 7%;
+        margin-left: 7%;
+    }
+    .left-bg main{
+        margin-right: 7%;
+        margin-left: 7%;
+    }
+    .icon{
+        width: 150px;
+        height: 150px;
+    }
+    .right-bg main p{
+        font-size: 15px;
+    }
+    .left-bg aside p{
+        font-size: 15px;
+    }
+    .adver p{
+        font-size: 15px;
+    }
+
+}
+@media screen and (max-width: 530px){
+    .right-bg{
+        height: 300px;
+    }
+    .left-bg{
+        height: 300px;
+    }
+    .right-bg main{ 
+        margin-right: 7%;
+        margin-left: 7%;
+    }
+    .left-bg main{
+        margin-right: 7%;
+        margin-left: 7%;
+    }
+    .icon{
+        width: 130px;
+        height: 130px;
+    }
+    .right-bg main p{
+        font-size: 15px;
+    }
+    .left-bg aside p{
+        font-size: 15px;
+    }
+    .adver p{
+        font-size: 15px;
+    }
+    nav ul li{margin: 15px 15px;}
+    .slider {
+        height: 40vh;
+        top:55px;
+    }
+
+}
+@media screen and (max-width: 450px){
+    .right-bg{
+        height: 275px;
+    }
+    .left-bg{
+        height: 275px;
+    }
+    .right-bg main{ 
+        margin-right: 7%;
+        margin-left: 7%;
+    }
+    .right-bg aside{
+        display: none!important;
+    }
+    .left-bg main{
+        display: none!important;
+        margin-right: 7%;
+        margin-left: 7%;
+    }
+    .left-bg aside{
+        margin-left: 7%;
+    }
+    .icon{
+        width: 100px;
+        height: 110px;
+    }
+    .right-bg main p{
+        font-size: 15px;
+    }
+    .left-bg aside p{
+        font-size: 15px;
+    }
+    .adver p{
+        font-size: 15px;
+    }
+    .title h1{font-size: 35px;}
+    .title p{font-size: 10px;}
+    .slider {
+        height: 25vh;
+        top:55px;
+    }
+    .contents{
+        transform: translateY(-241px);
+    }
+    .adver p{
+        margin-bottom: 300px;
+    }
+}
+@media screen and (max-width: 350px){
+    nav ul li{margin: 15px 8px;}
+}
+@media screen and (max-width: 280px){
+    nav ul li{margin: 15px 4px;}
+}
